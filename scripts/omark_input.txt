@@ -1,0 +1,25 @@
+omamer search --db LUCA.h5 --query *.protein.fa --out *.omamer
+
+omark -f *.omamer -d LUCA.h5 -o *_output/
+
+shell script for multiple inputs in a folder:
+#!/bin/bash
+
+# Variables
+db="LUCA.h5"
+output_folder="omamer_combined_output"
+mkdir -p "$output_folder"
+
+# Loop over all .fa files in the current directory
+for file in *.protein.fa; do
+    # Extract filename without extension
+    base_name=$(basename "$file" .fa)
+    
+    # Step 1: Run omamer
+    omamer search --db "$db" --query "$file" --out "$output_folder/${base_name}.omamer"
+    
+    # Step 2: Run omark
+    omark -f "$output_folder/${base_name}.omamer" -d "$db" -o "$output_folder/${base_name}_output"
+done
+
+echo "Processing complete. Results saved in $output_folder"

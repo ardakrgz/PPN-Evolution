@@ -1,0 +1,120 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=18;
+	taxlabels
+	'aphelenchoides_besseyi.AORJ_PRJNA834627.WBPS19.protein'[&!name="Aphelenchoides besseyi"]
+	'aphelenchoides_bicaudatus.PRJNA834627.WBPS19.protein'[&!name="Aphelenchoides bicaudatus"]
+	'aphelenchoides_fujianensis.PRJNA834627.WBPS19.protein'[&!name="Aphelenchoides fujianensis"]
+	'bursaphelenchus_xylophilus.PRJEA64437.WBPS19.protein'[&!name="Bursaphelenchus xylophilus"]
+	'ditylenchus_destructor.PRJNA312427.WBPS19.protein'[&!name="Ditylenchus destructor"]
+	'ditylenchus_dipsaci.PRJNA498219.WBPS19.protein'[&!name="Ditylenchus dipsaci"]
+	'globodera_pallida.PRJEB123.WBPS19.protein'[&!name="Globodera pallida"]
+	'globodera_rostochiensis.L19_PRJNA695196.WBPS19.protein'[&!name="Globodera rostochiensis"]
+	'heterodera_glycines.PRJNA381081.WBPS19.protein'[&!name="Heterodera glycines"]
+	'heterodera_schachtii.PRJNA522950.WBPS19.protein'[&!name="Heterodera schachtii"]
+	'meloidogyne_arenaria.PRJEB8714.WBPS19.protein'[&!name="Meloidogyne arenaria"]
+	'meloidogyne_chitwoodi.RACE1_PRJNA666745.WBPS19.protein'[&!name="Meloidogyne chitwoodi"]
+	'meloidogyne_enterolobii.PRJNA340324.WBPS19.protein'[&!name="Meloidogyne enterolobii"]
+	'meloidogyne_floridensis.PRJEB6016.WBPS19.protein'[&!name="Meloidogyne floridensis"]
+	'meloidogyne_graminicola.PRJNA411966.WBPS19.protein'[&!name="Meloidogyne graminicola"]
+	'meloidogyne_hapla.PRJNA29083.WBPS19.protein'[&!name="Meloidogyne hapla"]
+	'meloidogyne_incognita.PRJEB8714.WBPS19.protein'[&!name="Meloidogyne incognita"]
+	'meloidogyne_javanica.PRJEB8714.WBPS19.protein'[&!name="Meloidogyne javanica"]
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ((('bursaphelenchus_xylophilus.PRJEA64437.WBPS19.protein':0.524905,('aphelenchoides_bicaudatus.PRJNA834627.WBPS19.protein':0.409888,('aphelenchoides_fujianensis.PRJNA834627.WBPS19.protein':0.305461,'aphelenchoides_besseyi.AORJ_PRJNA834627.WBPS19.protein':0.228254)[&label=1]:0.191104)[&label=1]:0.152161)[&label=1]:0.297732,('ditylenchus_destructor.PRJNA312427.WBPS19.protein':0.338909,'ditylenchus_dipsaci.PRJNA498219.WBPS19.protein':0.407002)[&label=1]:0.186288)[&label=1]:0.116442,(('meloidogyne_incognita.PRJEB8714.WBPS19.protein':0.02106,('meloidogyne_floridensis.PRJEB6016.WBPS19.protein':0.056173,(('meloidogyne_enterolobii.PRJNA340324.WBPS19.protein':0.103157,('meloidogyne_hapla.PRJNA29083.WBPS19.protein':0.164539,('meloidogyne_chitwoodi.RACE1_PRJNA666745.WBPS19.protein':0.222692,'meloidogyne_graminicola.PRJNA411966.WBPS19.protein':0.238888)[&label=1]:0.258652)[&label=1]:0.149854)[&label=0.963]:0.016105,('meloidogyne_arenaria.PRJEB8714.WBPS19.protein':0.024012,'meloidogyne_javanica.PRJEB8714.WBPS19.protein':0.033737)[&label=1]:0.043633)[&label=0.632]:0.014563)[&label=0.984]:0.018735)[&label=1]:0.516229,(('heterodera_schachtii.PRJNA522950.WBPS19.protein':0.022595,'heterodera_glycines.PRJNA381081.WBPS19.protein':0.035963)[&label=1]:0.24586,('globodera_pallida.PRJEB123.WBPS19.protein':0.051573,'globodera_rostochiensis.L19_PRJNA695196.WBPS19.protein':0.045725)[&label=1]:0.223884)[&label=1]:0.342964)[&label=1]:0.116442);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=2.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=10;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=true;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=488;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=0.25;
+	set scaleAxis.minorTicks=0.05;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=12.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=2.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Arial";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=3;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

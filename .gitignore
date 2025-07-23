@@ -25,15 +25,6 @@ __pycache__/
 *.so
 *.exe
 
-# Large datasets or results (optional)
-data/
-results/
-*.fasta
-*.fa
-*.fastq
-*.bam
-*.vcf
-
 # Excel and temp files
 *.xlsx
 *.xls
