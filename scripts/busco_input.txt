@@ -1,0 +1,1 @@
+busco -i [SEQUENCE_FOLDER] -m [MODE] --lineage_dataset eukaryota_odb10 --cpu 4
