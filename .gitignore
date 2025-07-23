@@ -25,10 +25,6 @@ __pycache__/
 *.so
 *.exe
 
-# Excel and temp files
-*.xlsx
-*.xls
-~$*
 
 # Ignore local settings
 *.swp
