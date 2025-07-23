@@ -26,9 +26,9 @@ This project investigates genomic features and evolutionary relationships of pla
 
 ## How to Reproduce
 1. Run BUSCO and OMAmer/OMArk scripts on downloaded data.
-2. Filter species with high-quality data using `filtering_species.R`.
+2. Filter species with high-quality data using `threshold_75.R`.
 3. Run OrthoFinder with protein sequences.
-4. Use `correlation_plot.py` to generate genome size vs. gene duplication plot.
+4. Use `genomesize_vs_duplication.py` to generate genome size vs. gene duplication plot.
 
 ## Author
 Arda Burak Karagoz - arda.karagoz@metu.edu.tr
