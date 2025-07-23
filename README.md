@@ -6,9 +6,14 @@ This project investigates genomic features and evolutionary relationships of pla
 
 ## Contents
 - `Research_Project_Karagoz.pdf`: Full project report
-- `scripts/`: Shell, R, and Python scripts for quality check, filtering, phylogenetic analysis, and statistical plots
-- `data/`: Includes species data and (optionally) raw genome/protein data
-- `results/`: Phylogenetic tree and analysis outputs
+- `scripts/`: Bash, R, and Python scripts for quality check, filtering, phylogenetic analysis, and statistical plots
+- `data/`: Includes PPN protein FASTA files used in OrthoFinder for phylogenetic construction and the result file which was used in FigTree.
+- `results/`: Output figures and an Excel file on thorough assembly information for each species.
+
+## Databases
+- NCBI genome database
+- Euuropean Nucleotide Archive (EBI-ENA)
+- UniProt
 
 ## Dependencies
 - BUSCO v5.8.0
