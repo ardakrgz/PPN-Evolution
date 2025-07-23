@@ -1,0 +1,45 @@
+# macOS system files
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Conda/venv environments
+.env/
+.venv/
+*.egg-info/
+*.log
+
+# Compiled binaries
+*.o
+*.so
+*.exe
+
+# Large datasets or results (optional)
+data/
+results/
+*.fasta
+*.fa
+*.fastq
+*.bam
+*.vcf
+
+# Excel and temp files
+*.xlsx
+*.xls
+~$*
+
+# Ignore local settings
+*.swp
+*.bak
+*.tmp
